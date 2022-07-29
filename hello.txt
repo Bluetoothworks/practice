@@ -1,4 +1,25 @@
-<div class="mb-3">
-  <label for="" class="form-label"></label>
-  <textarea class="form-control" name="" id="" rows="3"></textarea>
-</div>
+1. Make a contribution to your own repo
+
+open folder
+git init     (makes .git file in folder)
+git add .   (adds all the folder content to stage)
+git commit -m "hello" 
+git remote add origin https://github.com/Bluetoothworks/First-proj.git
+git push -u origin master (pushed to master)
+
+
+2. To make a branch and push to the branch, not the master
+
+git init(no need to do this if done already)
+git checkout -b branch1  (a new branch named branch1 is created)
+git add .
+git commit -m "added"
+git push -u origin branch1 (pushed to branch 1)
+
+3. To merge an unpushed branch to the master(a pushed branch can be merged as well)
+
+git checkout master (given that branch is is declared and changes are commited)
+git merge branch1 (changes in branch 1 are added to master)
+git push -u origin master (the new merged master is pushed to be added)
+
+4. if there are 2 changes merged before pushing after the first, merge conflic occurs, this gives 3 options, either add both, or add the current or the incoming
