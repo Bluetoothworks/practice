@@ -23,3 +23,5 @@ git merge branch1 (changes in branch 1 are added to master)
 git push -u origin master (the new merged master is pushed to be added)
 
 4. if there are 2 changes merged before pushing after the first, merge conflic occurs, this gives 3 options, either add both, or add the current or the incoming
+
+5. in case you need to delete the .git file to start with everything, use rm -rf .git/
